@@ -1,0 +1,341 @@
+body {
+  background: #efefef;
+  color: black;
+  margin: 0px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #dedede;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topNavBar {
+  padding: 24px 0px 24px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.topNavBar-inner {
+  padding: 0px 16px;
+}
+.topNavBar a {
+  float: left;
+}
+.topNavBar nav {
+  float: right;
+}
+.topNavBar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topNavBar nav ul li {
+  float: left;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+.topNavBar nav ul li a {
+  font-size: 12px;
+  color: #ccced1;
+  font-weight: bold;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  transition: 0.3s;
+}
+.topNavBar nav ul li a:hover {
+  border-bottom: 3px solid #e6686e;
+}
+.topNavBar .logo {
+  font-size: 24px;
+  font-family: "Arial Black";
+  padding-top: 3px;
+  padding-bottom: 7px;
+}
+.topNavBar .logo .rs {
+  margin-right: 4px;
+  color: #e6686e;
+}
+.topNavBar .logo .card {
+  color: #9a9da2;
+}
+.banner {
+  background-image: url(./img/rs-cover-2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 515px;
+}
+.banner .mask {
+  background-color: rgba(44, 51, 64, 0.5);
+  height: 515px;
+}
+.userCard {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.69);
+}
+.userCard .welcome {
+  color: white;
+  background-color: #e6686e;
+  display: inline-block;
+  padding: 3px 11px;
+  line-height: 22px;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 34px;
+}
+.userCard .welcome .triangle {
+  border: 4px solid #e6686e;
+  height: 0px;
+  width: 0px;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  left: 5px;
+  top: 100%;
+}
+.userCard .picture {
+  float: left;
+}
+.userCard .text {
+  float: left;
+  padding-left: 65px;
+  width: 470px;
+}
+.userCard .pictureAndText {
+  padding: 50px;
+}
+.userCard .introduce {
+  color: #3d4451;
+}
+.text hr {
+  margin: 20px 0;
+}
+.userCard dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  width: 30%;
+  padding: 6px 0;
+}
+.userCard dl dd {
+  font-size: 14px;
+  color: #9da0a7;
+  float: left;
+  width: 70%;
+  padding: 6px 0;
+}
+body main footer a {
+  display: inline-block;
+  width: 46px;
+  padding: 11px 0;
+  line-height: 24px;
+  border-radius: 50%;
+  margin: 20px 20px;
+  transition: 0.5s;
+}
+body main footer a:hover {
+  background: #cf5d63;
+}
+.userCard footer.media {
+  background: #e6686e;
+  text-align: center;
+}
+.userCard svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  vertical-align: top;
+}
+body main {
+  margin-top: -345px;
+}
+body main .downloadResume {
+  border: 1px solid #cbcdcf;
+  border-radius: 3px;
+  background-color: #efefef;
+  color: #3d4451;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 21px 55px;
+  line-height: 16px;
+  margin: 32px 0;
+  display: inline-block;
+  transition: box-shadow 0.3s;
+}
+body main .downloadResume:hover {
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3);
+}
+body main .downloadResumeWrapper {
+  text-align: center;
+}
+.selfIntruduction {
+  text-align: center;
+  font-family: "kai";
+  font-size: 18px;
+  color: #3d4451;
+  line-height: 36px;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.skills,
+section.portfolio {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.skills h2{
+  color: #3d4451;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+section.portfolio h2 {
+  color: #3d4451;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+section.skills h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+section.skills ol {
+  background: white;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.69);
+  padding: 42px 50px 10px 50px;
+}
+section.skills ol li {
+  float: left;
+  width: 48%;
+}
+section.skills ol li:nth-child(even) {
+  float: right;
+}
+section.skills .progressBar {
+  height: 5px;
+  background: #fae1e2;
+  border-radius: 2px;
+  margin: 5px 0 40px 0;
+}
+section.skills .progressBar .progress {
+  background: #e6686e;
+  width: 50%;
+  height: 100%;
+  border-radius: 2px;
+}
+section.portfolio {
+  text-align: center;
+  margin-bottom: 100px;
+}
+section.portfolio nav {
+  text-align: center;
+  display: inline-block; /*为了使bar居中，bar随nav宽度*/
+}
+section.portfolio nav ol {
+  margin: 0 auto;
+  display: inline-block; /*变成内联元素，可以在父元素设置居中了*/
+  vertical-align: top; /*处理掉inline-block的下空隙*/
+}
+section,
+.portfolio nav ol h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+section.portfolio nav ol li {
+  float: left;
+  margin-left: 40px;
+  cursor: pointer; /*选取时鼠标指针样式*/
+}
+section.portfolio nav ol li:nth-child(1) {
+  margin-left: 0px;
+}
+section.portfolio nav .bar {
+  /*bar是block元素，而ol是inline-block，所以一定会换行*/
+  vertical-align: top;
+  height: 5px;
+  background: white;
+  margin-top: 13px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+section.portfolio .bar .bar-inner {
+  height: 100%;
+  background: #e46970;
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+section.portfolio .bar.state-1 .bar-inner {
+  margin-left: 0px;
+  width: 33px;
+}
+section.portfolio .bar.state-2 .bar-inner {
+  margin-left: 58px;
+  width: 119px;
+}
+section.portfolio .bar.state-3 .bar-inner {
+  margin-left: 205px;
+  width: 31px;
+}
+section.portfolio .works {
+  position: relative;
+  height: 576px;
+}
+section.portfolio .works .big {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 8px;
+  height: 576px; /*这里不知为什么big元素总比img多4px。所以规定了高度(加阴影就可以看出来)*/
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.69);
+}
+section.portfolio .works .small1 {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 636px;
+  height: 278px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.69);
+}
+section.portfolio .works .small2 {
+  position: absolute;
+  margin-top: 298px;
+  margin-left: 636px;
+  height: 278px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.69);
+}

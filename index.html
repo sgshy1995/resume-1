@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Eden's Resume</title>
-    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./loading.css">
     <script src="//at.alicdn.com/t/font_956862_aexbwte8bx6.js"></script>
     <style type="text/css">
       .icon {
@@ -16,6 +17,10 @@
     </style>
   </head>
   <body>
+    <div id="siteWelcome" class="site-welcome active">
+      <div class="loading"></div>
+      <p class="textld">Loading...</p>
+    </div>
     <div class="topNavBar">
       <div class="topNavBar-inner clearfix">
         <a class="logo" href="" alt="logo">
@@ -194,6 +199,14 @@
 
     </section>
   </body>
+  <script>
+    setTimeout(
+      function(){
+        siteWelcome.classList.remove("active")
+      },
+      1500
+    )
+  </script>
 </html>
 
 <!-- 
